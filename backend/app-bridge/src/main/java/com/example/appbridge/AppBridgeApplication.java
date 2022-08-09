@@ -2,7 +2,9 @@ package com.example.appbridge;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication
@@ -13,11 +15,11 @@ public class AppBridgeApplication {
 		SpringApplication.run(AppBridgeApplication.class, args);
 	}
 
+	@CrossOrigin(origins = "http://localhost:3000")
 	@GetMapping("/bridge")
-	public int qtdNumeros() {
-		int k, n, contador, qtd_divisores_n, qtd_divisores_n1, divisor;
+	public int qtdNumeros(@RequestParam int k) {
+		int n, contador, qtd_divisores_n, qtd_divisores_n1, divisor;
 
-        k = 5;
         contador = 0;
 
         for (n=2; n<k; n++) {

@@ -1,9 +1,21 @@
 import React, { useState } from 'react';
 import Button from './Button';
+import api from '../api.js';
 import './AddCalculo.css';
 
 const AddCalculo = ({handleCalculoAddition}) => {
-    const backend = () => {};
+    const backend = (entrada) => {
+        const inicio = performance.now();
+        api
+          .get("/bridge?k="+entrada)
+          .then((response) => {
+            handleCalculoAddition(inputData, response.data, tempo_exec)
+        })
+          .catch((err) => {
+            console.error("ops! ocorreu um erro " + err);
+        })
+        const tempo_exec = performance.now() - inicio;
+    };
 
     const [inputData, setInputData] = useState();
 
