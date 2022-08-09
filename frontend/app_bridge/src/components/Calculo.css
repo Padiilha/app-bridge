@@ -1,0 +1,10 @@
+.container_calc {
+    background-color: #32323A;
+    margin: 8px 0;
+    padding: 15px 20px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    color: #F0F0F5;
+    align-items: center;
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Button from './Button';
+import './AddCalculo.css';
 
 const AddCalculo = ({handleCalculoAddition}) => {
     const backend = () => {};
@@ -16,16 +17,17 @@ const AddCalculo = ({handleCalculoAddition}) => {
     };
 
     return (
-        <>
+        <div className='add-calculo-container'>
             <input
                 onChange={handleInputChange}
                 value={inputData}
-                type="int"
+                type='int'
+                className='add-calculo-input'
             />
-            <div>
+            <div className='add-calculo-button-container'>
                 <Button onClick={handleAddCalculoClick}>Adicionar</Button>
             </div>
-        </>
+        </div>
     );
 }
  

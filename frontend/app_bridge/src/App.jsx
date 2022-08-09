@@ -14,17 +14,17 @@ const App = () => {
         calc_entrada: entrada,
         calc_resultado: resultado,
         calc_tempo_exec: tempo_exec
-      }, ... lista_calculo
+      }, ...lista_calculo
     ];
 
     setListaCalculo(novoCalculo);
   };
 
   return (
-    <>
+    <div className='container'>
       <AddCalculo handleCalculoAddition={handleCalculoAddition} />
       <ListaCalculo lista_calculo={lista_calculo} />
-    </>
+    </div>
   );
 }
 
