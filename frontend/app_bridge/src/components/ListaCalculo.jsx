@@ -6,7 +6,7 @@ const ListaCalculo = ({lista_calculo}) => {
         <>
             {lista_calculo.map(calculo => (
                 <Calculo calculo={calculo} />
-            ))};
+            ))}
         </>
     );
 };
