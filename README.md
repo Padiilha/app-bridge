@@ -16,6 +16,6 @@ Para executar o frontend, execute o seguinte comando no diretório `app-bridge/f
 
 ### `npm start`
 \
-Para executar o backend, execute o programa:
+Para executar o backend, execute o seguinte programa no diretório `app-bridge/backend/app-bridge/src/main/java/com/example/appbridge`:
 
-### `app-bridge/backend/app-bridge/src/main/java/com/example/appbridge/AppBridgeApplication.java`
+### `AppBridgeApplication.java`
