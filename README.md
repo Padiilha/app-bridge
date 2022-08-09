@@ -12,7 +12,7 @@ Primeiramente, deve-se clonar este repositório em sua máquina através do coma
 
 ### `git clone https://github.com/Padiilha/app-bridge.git`
 \
-Para executar o frontend, execute o seguinte comando no diretório `app-bridge/frontend/app_bridge`:
+Para executar o frontend, execute o seguinte comando no diretório `app-bridge/frontend`:
 
 ### `npm start`
 \
