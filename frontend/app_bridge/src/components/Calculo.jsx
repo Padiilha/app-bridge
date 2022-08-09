@@ -4,7 +4,15 @@ import './Calculo.css';
 const Calculo = ({calculo}) => {
     return (
         <div className='container_calc'>
-            entrada: {calculo.calc_entrada} resultado: {calculo.calc_resultado} tempo de execução: {calculo.calc_tempo_exec}
+            <div className='elemento'>
+                Entrada: {calculo.calc_entrada}
+            </div>
+            <div className='elemento'>
+                Resultado: {calculo.calc_resultado}
+            </div>
+            <div className='elemento'>
+                Tempo de Execução: {calculo.calc_tempo_exec} ms
+            </div>
         </div>
     );
 }

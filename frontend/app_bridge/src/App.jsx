@@ -22,6 +22,10 @@ const App = () => {
 
   return (
     <div className='container'>
+      <h1 align='center'>Desafio Bridge | Desenvolvimento Web Full Stack</h1>
+      <p align='justify'>Este aplicativo calcula o número de inteiros positivos n menores que k, para os quais n e n + 1 têm o mesmo número de divisores positivos.</p>
+      <hr />
+      <p>Insira um número inteiro entre 0 e 50000</p>
       <AddCalculo handleCalculoAddition={handleCalculoAddition} />
       <ListaCalculo lista_calculo={lista_calculo} />
     </div>
