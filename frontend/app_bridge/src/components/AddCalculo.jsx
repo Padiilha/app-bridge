@@ -33,7 +33,9 @@ const AddCalculo = ({handleCalculoAddition}) => {
             <input
                 onChange={handleInputChange}
                 value={inputData}
-                type='int'
+                type='number'
+                max='50000'
+                min='0'
                 className='add-calculo-input'
             />
             <div className='add-calculo-button-container'>
