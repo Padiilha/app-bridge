@@ -5,16 +5,14 @@ import './AddCalculo.css';
 
 const AddCalculo = ({handleCalculoAddition}) => {
     const backend = (entrada) => {
-        const inicio = Date.now();
         api
         .get("/bridge?k="+entrada)
         .then((response) => {
-            handleCalculoAddition(inputData, response.data, tempo_exec)
+            handleCalculoAddition(inputData, response.data.resultado, response.data.tempoExec)
         })
         .catch((err) => {
             console.error("ops! ocorreu um erro " + err);
         })
-        const tempo_exec = Date.now() - inicio;
     };
 
     const [inputData, setInputData] = useState();
